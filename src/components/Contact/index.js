@@ -19,7 +19,6 @@ const ContactUs = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission (e.g., send data to an API or display a success message)
         toast.success('Message sent successfully!');
         setFormData({
             name: '',
