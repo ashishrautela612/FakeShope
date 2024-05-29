@@ -27,7 +27,7 @@ const Product = () => {
         // Show toast notification
         toast('Item added to cart!', {
             position: "top-right",
-            autoClose: 1500,
+            autoClose: 500,
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,

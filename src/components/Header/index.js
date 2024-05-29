@@ -2,8 +2,10 @@ import React from 'react'
 import "./Header.css"
 import { LOGO } from '../../utils/constants';
 import { Link, NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
+    const items=useSelector((state)=>state.cart.items);
     return (
         <div className='header flex justify-between items-center px-12 pt-4 pb-3 bg-white w-full'>
             <Link to="/">
@@ -19,7 +21,7 @@ const Header = () => {
                     <Link to="/about">About</Link>
                 </li>
                 <li className='cursor-pointer'>
-                    <Link to="/cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></Link>
+                    <Link to="/cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <sup className='font-medium text-lg'>{items.length}</sup></Link>
                 </li>
                 <li className='cursor-pointer'>
                     <Link to="/contact">Contact</Link>
