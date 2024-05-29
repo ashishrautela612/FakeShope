@@ -1,0 +1,8 @@
+.cart{
+    border: 1px solid black;
+}
+
+.cart:hover{
+    background-color: black;
+    color: white;
+}

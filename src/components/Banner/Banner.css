@@ -1,0 +1,15 @@
+.banner {
+  /* width: 100%; */
+  /* margin-left: 120px;
+  margin-right: 100px; */
+}
+
+.banner-img > img {
+  height: 252px;
+  /* width: 420px; */
+  margin: 20px;
+}
+
+.banner-img:hover{
+    
+}

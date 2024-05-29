@@ -1,0 +1,33 @@
+.card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 30%;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+.card-image {
+    width: 95%;
+}
+
+.card-image > img {
+    width: 100%;
+}
+
+.card > img {
+    height: 280px;
+}
+.card-title{
+    height: 2rem;
+} 
+.arrow{
+    border: 1px solid white;
+    font: bold;
+}
+
+.arrow:hover{
+    border: 1px solid skyblue;
+}
